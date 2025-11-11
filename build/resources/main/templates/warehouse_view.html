@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Warehouse Consumer</title>
+</head>
+<body>
+<h1 th:text="${warehouse.warehouseName}">Warehouse Name</h1>
+
+<form th:action="@{/warehouse/consumer}" method="get">
+    Standort (ID): <input type="text" name="warehouseId" />
+    Produktname: <input type="text" name="productName" />
+    <button type="submit">Filtern</button>
+</form>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Kategorie</th>
+        <th>Menge</th>
+        <th>Einheit</th>
+    </tr>
+    <tr th:each="p : ${warehouse.product}">
+        <td th:text="${p.productId}">ID</td>
+        <td th:text="${p.productName}">Name</td>
+        <td th:text="${p.productCategory}">Kategorie</td>
+        <td th:text="${p.productQuantity}">Menge</td>
+        <td th:text="${p.productUnit}">Einheit</td>
+    </tr>
+</table>
+</body>

@@ -3,7 +3,7 @@ Verfasser: Elyesa Imamoglu, 4CHIT
 
 ## Aufgabenstellung
 
-Ziel des Projekts ist die Entwicklung eines Simulators für Lagerdaten und einer darauf aufsetzenden REST-Schnittstelle. Der Simulator generiert realistische Lagerdaten inklusive Standortinformationen. Diese Daten können über die REST-API im JSON- oder optional im XML-Format abgerufen werden. Zusätzlich soll ein Consumer entwickelt werden, der die Lagerinformationen tabellarisch anzeigt und Filtermöglichkeiten nach Standort oder Produktname bietet.
+Entwickeln Sie einen Simulator, der die Daten eines Lagerstandortes (WHx) generiert. Es ist dabei zu achten, dass die Daten realistisch sind und im Zusammenhang mit entsprechenden Einheiten erzeugt werden. Diese Daten sollen gemeinsam mit einigen Details zum dem Standort ueber eine REST Schnittstelle veroeffentlicht werden. Die Schnittstelle verwendet standardmaessig das JSON Format und kann optional auf XML umgestellt werden.
 
 ## Implementierung
 #### Build.gradle
