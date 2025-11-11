@@ -10,7 +10,6 @@ Entwickeln Sie einen Simulator, der die Daten eines Lagerstandortes (WHx) generi
 - `build.gradle file mit den nötigen implementations.
 
 ```groovy
-implementation 'jakarta.xml.bind:jakarta.xml.bind-api:4.0.2'
 implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml'
 implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 ```
